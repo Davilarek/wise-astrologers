@@ -5,7 +5,7 @@
 
   <link type="text/css" rel="stylesheet" href="css/homm-message-generator.css" />
 
-  <title>HoMM message generator</title>
+  <title>HoMM Astrologer’s Prophecy Generator</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -29,11 +29,19 @@
   <div class="main-wrapper">
     <div class="left-panel">
       <div class="controls-wrapper">
-        <div class="input-wrapper input-wrapper-message">
-          <div class="input-header">
-            Message text:
+        <div class="input-wrapper input-wrapper-prophecy">
+          <div class="input-header">Astrologer's prophecy:</div>
+          <div class="prophecy-controls">
+            <select id="lang" class="homm-select">
+              <option value="en">English</option>
+              <option value="pl">Polski</option>
+            </select>
           </div>
-          <textarea id="input">Write your text in the left panel</textarea>
+          <small id="prophecy-meta" class="prophecy-meta"></small>
+        </div>
+
+        <div class="input-wrapper input-wrapper-message">
+          <textarea id="input">Fetching prophecy...</textarea>
         </div>
 
         <div class="input-wrapper input-wrapper-style">
@@ -117,28 +125,6 @@
           <a class="homm-button download-button">
             Download current image
           </a>
-        </div>
-      </div>
-
-      <div class="about-wrapper">
-        <div class="about-icon open">
-          About tool
-        </div>
-        <div class="about-icon close">
-          Close
-        </div>
-
-        <div class="about-text">
-          <p>
-            This text imitates style of message window from 'Heroes of Might and Magic III' video game.
-          </p>
-          <p>
-            Known bugs:
-            <ul>
-              <li>it is possible to make only cancel button, which is impossible in the original game, but I don't care</li>
-              <li>wrong window sizing for texts with very wide words and with many line breaks</li>
-            </ul>
-          </p>
         </div>
       </div>
     </div>
