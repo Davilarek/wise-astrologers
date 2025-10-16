@@ -37,7 +37,7 @@ class HommMessageGeneratorDispatcher {
 
   async fetchProclamation() {
     const lang = this.langSelect?.value || "en";
-    const url = `https://wise-atrologers.davilareko.workers.dev/?lang=${lang}`;
+    const url = `https://wise-astrologers.davilareko.workers.dev/?lang=${lang}`;
 
     try {
       const res = await fetch(url);
